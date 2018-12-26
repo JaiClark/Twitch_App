@@ -1,0 +1,23 @@
+body {
+    background-color: #3A4357;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.twitch-container {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.twitch-content {
+    width: 50%;
+    height: 25em;
+    border: 3px solid black;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #fff;
+}
