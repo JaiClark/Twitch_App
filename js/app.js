@@ -19,19 +19,19 @@ $(document).ready(function() {
   var url = "https://api.twitch.tv/kraken/users/kinggothalion?client_id=" + id;
 
 
-  for (i = 0; i < streamers.length; i++) {
-    console.log(streamers[i]);
-  }
+  // for (i = 0; i < streamers.length; i++) {
+  //   console.log(streamers[i]);
+  // }
 
 
 
-  function streamFunction() {
-    x = $("online");
-    x.innerHTML = streamers.map(function(itm, i){
-      console.log("https://api.twitch.tv/kraken/users/" + streamers[i] + "?client_id=" + id);
-    });
-  }
-streamFunction();
+//   function streamFunction() {
+//     let x = $("#online").innerHTML;
+//     streamers.map(function(itm, i){
+//       console.log("https://api.twitch.tv/kraken/users/" + streamers[i] + "?client_id=" + id);
+//     });
+//   }
+// streamFunction();
 
 
 
@@ -40,7 +40,14 @@ streamFunction();
     url: url,
     dataType: "jsonp",
     success: function(data) {
+
+      streamers.map(function(itm, i){
+        console.log(data);
+      });
      
+      for (i = 0; i < streamers.length; i++) {
+        $("p").append("https://api.twitch.tv/kraken/users/" + streamers[i] + "?client_id=" + id);
+  }
     }
   });
 });
