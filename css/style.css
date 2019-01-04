@@ -28,3 +28,20 @@ body {
 .results {
     margin: 15px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav {
+    float: right;
+}
+
+
+
